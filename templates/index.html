@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Image Editing Showcase</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <script src="https://unpkg.com/scrollreveal"></script>
+</head>
+<body>
+
+    <h1>Image Editing Step Showcase</h1>
+
+    <div class="container">
+        <div class="step">
+            <h2>1. Foreground Image</h2>
+            <img src="/images/foreground.jpg" alt="Foreground">
+        </div>
+
+        <div class="step">
+            <h2>2. Background Image</h2>
+            <img src="/images/background.jpeg" alt="Background">
+        </div>
+
+        <div class="step">
+            <h2>3. Image with No Background</h2>
+            <img src="/images/no_background.png" alt="No Background">
+        </div>
+
+        <div class="step">
+            <h2>4. Image Merged</h2>
+            <img src="/images/merged.png" alt="Merged">
+        </div>
+
+        <div class="step">
+            <h2>5. Final Image</h2>
+            <img src="/images/final.png" alt="Final">
+        </div>
+    </div>
+
+    <script>
+        ScrollReveal().reveal('.step', { 
+            delay: 300,
+            duration: 1000,
+            reset: true,
+            distance: '50px',
+            easing: 'ease-in-out'
+        });
+    </script>
+</body>
+</html>
